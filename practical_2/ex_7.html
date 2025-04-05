@@ -1,0 +1,28 @@
+<!-- 6. For every loop iteration, write down which value it outputs. Both loops alert the same
+values, or not? -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // A)
+      let i = 0;
+      while (++i < 5) alert(i);
+
+      // B)
+      let j = 0;
+      while (j++ < 5) alert(j);
+    </script>
+  </body>
+</html>
+
+
+<!-- Output With Justification -->
+<!-- A) 1, 2, 3, 4 -->
+<!-- B) 1, 2, 3, 4, 5 -->
+<!-- Both loops alert the same values. The difference is that the first one pre-increments i and the second one post-increments j. -->

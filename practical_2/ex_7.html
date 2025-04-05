@@ -1,28 +1,37 @@
-<!-- 6. For every loop iteration, write down which value it outputs. Both loops alert the same
-values, or not? -->
+<!-- 7. Write the code which outputs prime numbers in the interval from 2 to n -->
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  </head>
-  <body>
+</head>
+<body>
     <script>
-      // A)
-      let i = 0;
-      while (++i < 5) alert(i);
-
-      // B)
-      let j = 0;
-      while (j++ < 5) alert(j);
+        var n = prompt("Enter the number: ");
+        var i, j, flag;
+        for(i = 2; i <= n; i++)
+        {
+            flag = 0;
+            for(j = 2; j <= i/2; j++)
+            {
+                if(i % j == 0)
+                {
+                    flag = 1;
+                    break;
+                }
+            }
+            if(flag == 0)
+            {
+                document.write(i + "<br>");
+            }
+        }
     </script>
-  </body>
+</body>
 </html>
 
+<!-- Output: -->
 
-<!-- Output With Justification -->
-<!-- A) 1, 2, 3, 4 -->
-<!-- B) 1, 2, 3, 4, 5 -->
-<!-- Both loops alert the same values. The difference is that the first one pre-increments i and the second one post-increments j. -->
+<!-- How this code run logic behind that expalain -->
+<!-- In this code, we are taking a number n as input from the user. We are then iterating from 2 to n. For each number i, we are checking if it is prime or not. We are checking this by iterating from 2 to i/2. If i is divisible by any number between 2 and i/2, then it is not a prime number. If i is not divisible by any number between 2 and i/2, then it is a prime number. We are printing all the prime numbers in the interval from 2 to n. -->

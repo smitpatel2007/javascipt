@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Like & Dislike Counter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        h2{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .like-btn { background: #20c070; color: white; }
+        .dislike-btn { background: #d31c1c; color: white; }
+    </style>
+</head>
+<body>
+    <h2>count like and dislike</h2>
+    <button class="like-btn" onclick="updateCount('like')">Like 👍 <span id='like'>0</span></button>
+    <button class="dislike-btn" onclick="updateCount('dislike')">Dislike 👎 <span id='dislike'>0</span></button>
+
+    <script>
+        let counts = { like: 0, dislike: 0 };
+
+        const updateCount = (type) => {
+            counts[type]++;
+            document.getElementById(type).innerText = counts[type];
+        };
+    </script>
+</body>
+</html>
 

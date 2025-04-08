@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   // Create and initialize a string
+let text = "Hello, JavaScript!";
+
+console.log("Original String:", text);
+
+// charAt() - Get character at index 7
+console.log("charAt(7):", text.charAt(7));
+
+// concat() - Join two strings
+let newText = text.concat(" Welcome to coding!");
+console.log("After concat():", newText);
+
+// replace() - Replace "JavaScript" with "JS"
+let replacedText = text.replace("JavaScript", "JS");
+console.log("After replace():", replacedText);
+
+// slice() - Extract part of the string (from index 7 to 17)
+let slicedText = text.slice(7, 17);
+console.log("After slice(7,17):", slicedText);
+
+// toLowerCase() - Convert to lowercase
+console.log("toLowerCase():", text.toLowerCase());
+
+// toUpperCase() - Convert to uppercase
+console.log("toUpperCase():", text.toUpperCase());
+
+// substring() - Extract part of the string (similar to slice but without negative index)
+let subText = text.substring(7, 17);
+console.log("After substring(7,17):", subText);
+
+
+    </script>
+</body>
+</html>

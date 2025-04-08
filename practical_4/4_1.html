@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Operations</title>
+</head>
+<body>
+    <h2>JavaScript Array Operations</h2>
+    <p id="output"></p>
 
+    <script>
+       // Create and initialize an array
+let numbers = [5, 2, 8, 1, 3];
+
+console.log("Original Array:", numbers);
+
+// push() - Add element at the end
+numbers.push(10);
+console.log("After push(10):", numbers);
+
+// pop() - Remove last element
+numbers.pop();
+console.log("After pop():", numbers);
+
+// reverse() - Reverse the array
+numbers.reverse();
+console.log("After reverse():", numbers);
+
+// sort() - Sort the array in ascending order
+numbers.sort((a, b) => a - b);
+console.log("After sort():", numbers);
+
+// slice() - Extract part of the array (from index 1 to 3)
+let slicedArray = numbers.slice(1, 3);
+console.log("After slice(1,3):", slicedArray);
+
+// concat() - Merge two arrays
+let newNumbers = [7, 6];
+let mergedArray = numbers.concat(newNumbers);
+console.log("After concat([7,6]):", mergedArray);
+
+// splice() - Remove 2 elements from index 1 and insert new elements
+numbers.splice(1, 2, 9, 4);
+console.log("After splice(1,2,9,4):", numbers);
+
+    </script>
+</body>
+</html>

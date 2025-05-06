@@ -1,43 +1,42 @@
+<!-- 4.2 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>String Operations</title>
 </head>
 <body>
     <script>
-   // Create and initialize a string
-let text = "Hello, JavaScript!";
+        // Create and initialize a string
+        let text = "Hello, JavaScript!";
 
-console.log("Original String:", text);
+        document.write("Original String: " + text + "<br><br>");
 
-// charAt() - Get character at index 7
-console.log("charAt(7):", text.charAt(7));
+        // charAt() - Get character at index 7
+        document.write("charAt(7): " + text.charAt(7) + "<br><br>");
 
-// concat() - Join two strings
-let newText = text.concat(" Welcome to coding!");
-console.log("After concat():", newText);
+        // concat() - Join two strings
+        let newText = text.concat(" Welcome to coding!");
+        document.write("After concat(): " + newText + "<br><br>");
 
-// replace() - Replace "JavaScript" with "JS"
-let replacedText = text.replace("JavaScript", "JS");
-console.log("After replace():", replacedText);
+        // replace() - Replace "JavaScript" with "JS"
+        let replacedText = text.replace("JavaScript", "JS");
+        document.write("After replace(): " + replacedText + "<br><br>");
 
-// slice() - Extract part of the string (from index 7 to 17)
-let slicedText = text.slice(7, 17);
-console.log("After slice(7,17):", slicedText);
+        // slice() - Extract part of the string (from index 7 to 17)
+        let slicedText = text.slice(7, 17);
+        document.write("After slice(7,17): " + slicedText + "<br><br>");
 
-// toLowerCase() - Convert to lowercase
-console.log("toLowerCase():", text.toLowerCase());
+        // toLowerCase() - Convert to lowercase
+        document.write("toLowerCase(): " + text.toLowerCase() + "<br><br>");
 
-// toUpperCase() - Convert to uppercase
-console.log("toUpperCase():", text.toUpperCase());
+        // toUpperCase() - Convert to uppercase
+        document.write("toUpperCase(): " + text.toUpperCase() + "<br><br>");
 
-// substring() - Extract part of the string (similar to slice but without negative index)
-let subText = text.substring(7, 17);
-console.log("After substring(7,17):", subText);
-
-
+        // substring() - Extract part of the string (similar to slice but without negative index)
+        let subText = text.substring(7, 17);
+        document.write("After substring(7,17): " + subText + "<br><br>");
     </script>
 </body>
 </html>

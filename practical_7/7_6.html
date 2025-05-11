@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Counter</title>
+</head>
+<body>
+
+  <h2>Count Images on This Page</h2>
+
+  <!-- Online images -->
+  <img src="img1.jpg" alt="img1">
+  <img src="img2.jpg" alt="img2">
+  <img src="img3.jpg" alt="img3">
+
+  <br><br>
+
+  <button onclick="countImages()">Count Images</button>
+
+  <p id="result"></p>
+
+  <script>
+    function countImages() {
+      var images = document.getElementsByTagName("img");
+      var total = images.length;
+      document.getElementById("result").innerText = "Total Images: " + total;
+    }
+  </script>
+
+</body>
+</html>
 

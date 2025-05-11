@@ -1,1 +1,33 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hover to Change Background</title>
+  <style>
+    .square {
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+      margin: 10px;
+    }
+
+    #pink { background-color: #ffc0cb; }
+    #purple { background-color: #800080; }
+    #green { background-color: #008000; }
+  </style>
+</head>
+<body>
+
+<div class="square" id="pink" onmouseover="changeColor('#ffc0cb')"></div>
+<div class="square" id="purple" onmouseover="changeColor('#800080')"></div>
+<div class="square" id="green" onmouseover="changeColor('#008000')"></div>
+
+<script>
+  function changeColor(color) {
+    document.body.style.backgroundColor = color;
+  }
+</script>
+
+</body>
+</html>

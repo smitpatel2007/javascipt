@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Color Change</title>
+  <style>
+    .square {
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+      margin: 10px;
+    }
+    #pink { background: pink; }
+    #blue { background: blue; }
+    #red { background: red; }
+  </style>
+</head>
+<body>
+
+<h2 id="text">Hover on any desired color below to change color of text</h2>
+
+<div class="square" id="pink" onmouseover="changeColor('pink')"></div>
+<div class="square" id="blue" onmouseover="changeColor('blue')"></div>
+<div class="square" id="red" onmouseover="changeColor('red')"></div>
+
+<script>
+  function changeColor(color) {
+    document.getElementById("text").style.color = color;
+  }
+</script>
+
+</body>
+</html>
 

@@ -1,1 +1,23 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function blue(){
+            var color1 = document.getElementById("text").style.color = "blue";
+        }
+        function pink(){
+            var color2 = document.getElementById("text").style.color = "pink";
+        }
+    </script>
+    <h1 id="text">This will Change font color when clicked on below buttons</h1>
+    <form>
+        <input type="button" value="blue" onclick="blue()">
+        <input type="button" value="pink" onclick="pink()">
+    </form>
+</body>
+</html>
